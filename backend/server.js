@@ -24,7 +24,7 @@ const connectDB = () => {
 connectDB();
 
 app.listen(3000, () => {
-    console.log('server started on http://localhost:' + 3000);
+    console.log('server started on http://localhost:' + 3001);
 });
 
 app.get('/', (req, res) => {
@@ -36,10 +36,10 @@ app.get('/', (req, res) => {
 });
 
 app.post('/signin', (req, res) => {
-    const query = "INSERT INTO signin (`name`, `time`, `reason`, `class`, `teacher`) VALUES (?)";
+    const query = "INSERT INTO signin (`name`, `datetime`, `reason`, `class`, `teacher`) VALUES (?)";
     const values = [
         req.body.name,
-        req.body.time,
+        req.body.datetime,
         req.body.reason,
         req.body.class,
         req.body.teacher
