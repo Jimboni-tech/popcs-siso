@@ -23,7 +23,7 @@ const connectDB = () => {
 };
 connectDB();
 
-app.listen(3000, () => {
+app.listen(3001, () => {
     console.log('server started on http://localhost:' + 3001);
 });
 
