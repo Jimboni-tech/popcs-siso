@@ -1,12 +1,12 @@
 import express from 'express';
 import sql from 'mysql2';
-
+import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config()
 
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 const db = sql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
