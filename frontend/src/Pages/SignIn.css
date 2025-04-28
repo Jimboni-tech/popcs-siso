@@ -1,11 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Doppio+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Doppio+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
+/* ---------- Global Styles ---------- */
+html,
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-#sititle{
-    color: #061E43;
-    font-size: 30px;
-    font-family: "Barlow Condensed", sans-serif;
+.pagecontainer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#signinheader {
     display: flex;
-    margin-right: auto;
-    margin-left: 175px;
+    justify-content: center;
+    align-items: center;
+    background-color: #061E43;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 90px;
+    padding: 10px 0;
+    border-bottom: 25px solid #5A98D0;
+    width: 100%;
+}
+
+#studentinfo {
+    width: 100%;
+    color: #061E43;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: left;
+    margin: 40px 0 20px 0;
+}
+
+.sicontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.inputcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.label {
+    font-weight: 500;
+    font-size: 19px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+#name,
+#reason,
+#class,
+#teacher,
+#datetime {
+    width: 100%;
+    height: 40px;
+    border: 2px solid rgb(161, 159, 159);
+    border-radius: 5px;
+    padding: 0 10px;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+#datetime {
+    width: 25%;
+   
+}
+
+
+.datetimecontainer {
+    position: relative;
+    width: 100%;
+}
+
+.datetime-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.datetime-input {
+    padding-left: 30px;
+    color: transparent;
+}
+
+
+.datetime-input::-webkit-datetime-edit {
+    display: none;
+}
+
+.datetime-input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.calendar-icon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+    font-size: 25px;
+    pointer-events: none;
+}
+
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    margin: 45px auto;
+    width: 100%;
+}
+
+#button {
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 12px 40px;
+    background-color: #061E43;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color: #0A2D6D;
 }
