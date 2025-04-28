@@ -1,14 +1,17 @@
 import express from 'express';
 import sql from 'mysql2';
 
+import dotenv from 'dotenv';
+dotenv.config()
+
 const app = express();
 app.use(express.json());
 
 const db = sql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'popcs-siso'
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB
 });
 const connectDB = () => {
     try{
