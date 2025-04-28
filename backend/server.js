@@ -1,12 +1,12 @@
 import express from 'express';
 import sql from 'mysql2';
-
+import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config()
 
 const app = express();
 app.use(express.json());
-
+app.use(cors());
 const db = sql.createConnection({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
@@ -23,8 +23,8 @@ const connectDB = () => {
 };
 connectDB();
 
-app.listen(3000, () => {
-    console.log('server started on http://localhost:' + 3000);
+app.listen(3001, () => {
+    console.log('server started on http://localhost:' + 3001);
 });
 
 app.get('/', (req, res) => {
@@ -36,10 +36,10 @@ app.get('/', (req, res) => {
 });
 
 app.post('/signin', (req, res) => {
-    const query = "INSERT INTO signin (`name`, `time`, `reason`, `class`, `teacher`) VALUES (?)";
+    const query = "INSERT INTO signin (`name`, `datetime`, `reason`, `class`, `teacher`) VALUES (?)";
     const values = [
         req.body.name,
-        req.body.time,
+        req.body.datetime,
         req.body.reason,
         req.body.class,
         req.body.teacher

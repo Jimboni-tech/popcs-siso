@@ -4,6 +4,8 @@
     height: 90px;
     display: flex;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 .logo {
     margin-left: .5cm;
