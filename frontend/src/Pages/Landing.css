@@ -63,17 +63,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%
 }
 
 .buttonContainer {
-    margin-top: 5%;
-    width: 20%;
     height: 100px;
 }
 
 
 .sisobutton {
-    width: 100%;
+    
+    width: 500px;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 500;
     font-size: 25px;
