@@ -53,3 +53,24 @@ app.post('/signin', (req, res) => {
     });
 });
 
+app.post('/signout', (req, res) => {
+    console.log('Received signout:', req.body);  // <-- add this line
+    const query = "INSERT INTO signout (`name`, `datetime`, `reason`, `class`, `teacher`) VALUES (?)";
+    const values = [
+        req.body.name,
+        req.body.datetime,
+        req.body.reason,
+        req.body.class,
+        req.body.teacher
+    ];
+    db.query(query, [values], (err, data) => {
+        if (err) {
+            console.error('DB error:', err);  
+            return res.status(500).json(err);
+        } else {
+            return res.status(200).json(data);
+        }
+    });
+});
+
+
