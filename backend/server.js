@@ -74,3 +74,23 @@ app.post('/signout', (req, res) => {
 });
 
 
+app.get('/signout', (req, res) => {
+    const query = "SELECT * FROM signout ORDER BY datetime DESC LIMIT 50";
+    db.query(query, (err, data) => {
+        if (err) {
+            console.error("Error fetching data:", err);
+            return res.status(500).json({ error: "Failed to fetch data" });
+        }
+        res.status(200).json(data);
+    });
+});
+app.get('/signin', (req, res) => {
+    const query = "SELECT * FROM signin ORDER BY datetime DESC LIMIT 50";
+    db.query(query, (err, data) => {
+        if (err) {
+            console.error("Error fetching data:", err);
+            return res.status(500).json({ error: "Failed to fetch data" });
+        }
+        res.status(200).json(data);
+    });
+});

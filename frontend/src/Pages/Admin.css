@@ -1,0 +1,93 @@
+#admin-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #061e43;
+    padding: 100px 20px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.admin-section {
+    margin-bottom: 40px;
+}
+
+.admin-section h1 {
+    color: #061e43;
+    border-bottom: 2px solid #c0c0c0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f8f9fa;
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.admin-table th {
+    background-color: #061e43;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.admin-table tbody tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.admin-table tbody tr:nth-child(odd) {
+    background-color: #f1f1f1;
+}
+
+.admin-table tbody tr:hover {
+    background-color: #dbe9f4;
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+
+    .admin-table,
+    .admin-table thead,
+    .admin-table tbody,
+    .admin-table th,
+    .admin-table td,
+    .admin-table tr {
+        display: block;
+    }
+
+    .admin-table thead {
+        display: none;
+    }
+
+    .admin-table tr {
+        margin-bottom: 15px;
+    }
+
+    .admin-table td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+    }
+
+    .admin-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 50%;
+        padding-right: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
