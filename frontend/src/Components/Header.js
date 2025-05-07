@@ -5,9 +5,9 @@ import logo from '../images/logo.png';
 const Header = () => {
     return (
         <div className = 'container'>
-            <div className = 'logo'>
+            <a href = './home'>
                 <img className = 'logo-image' src = {logo} alt = 'popcslogo'/>
-            </div>
+            </a>
         </div>
     );
 }
