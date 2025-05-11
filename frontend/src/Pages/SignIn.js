@@ -56,7 +56,7 @@ const SignIn = () => {
                 const distance = calculateDistance(userLat, userLon, targetLocation.lat, targetLocation.long);
                 console.log(`User is ${distance.toFixed(3)} km away from target.`);
 
-                if (distance > 0.1) {
+                if (distance > 1) {
                     alert("You must be on campus to sign in.");
                     return;
                 }

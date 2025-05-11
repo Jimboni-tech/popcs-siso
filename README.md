@@ -4,7 +4,7 @@ A simple digital system for late arrivals and early dismissals.
 
 ⸻
 
-🔎 What It Is
+What It Is
 
 A web-based tool that lets students sign in when late or sign out early — no paper forms, no waiting at the front desk.
 
@@ -13,31 +13,26 @@ A web-based tool that lets students sign in when late or sign out early — no p
 Why It Matters
 
 For Students
-	•	Quick and easy sign-in/out from any device
-	•	No more trips to the front office
+• Quick and easy sign-in/out from any device
+• No more trips to the front office
 
 For Staff
-	•	No manual data entry
-	•	Instant digital record of all check-ins/outs
+• No manual data entry
+• Instant digital record of all check-ins/outs
 
 For the School
-	•	Fewer errors
-	•	Saves time and paper
-	•	Fully digital and eco-friendly
+• Fewer errors
+• Saves time and paper
+• Fully digital and eco-friendly
 
 ⸻
 
-How It Works
-	1.	Students open the check-in page (can be added to the school website)
-	2.	Location is verified using geolocation
-	3.	Student enters name, selects in/out, and provides a reason
-	4.	Data is saved securely in a MySQL database
-	5.	Office staff can access all records in real-time
+How It Works 1. Students open the check-in page (can be added to the school website) 2. Location is verified using geolocation 3. Student enters name, selects in/out, and provides a reason 4. Data is saved securely in a MySQL database 5. Office staff can access all records in real-time
 
 ⸻
 
 Tech Overview (Simple Terms)
-	•	Frontend: Built with React for a clean, responsive design
-	•	Location Tracking: Ensures student is on campus
-	•	Database: MySQL stores all entries securely (can be integrated to the school's database)
-  •	Auto-communication: Emails are automatically sent to teacher and front desk.
+•Frontend: Built with React for a clean, responsive design
+•Location Tracking: Ensures student is on campus
+•Database: MySQL stores all entries securely (can be integrated to the school's database)
+•Auto-communication: Emails are automatically sent to teacher and front desk.
