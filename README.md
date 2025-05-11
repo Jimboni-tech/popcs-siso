@@ -1,28 +1,28 @@
-📍 Student Check-In System
+# Student Check-In System
 
 A simple digital system for late arrivals and early dismissals.
 
 ⸻
 
-What It Is
+## What It Is
 
 A web-based tool that lets students sign in when late or sign out early — no paper forms, no waiting at the front desk.
 
 ⸻
 
-Why It Matters
+## Why It Matters
 
-For Students
+### For Students
 
 - Quick and easy sign-in/out from any device
 - No more trips to the front office
 
-For Staff
+### For Staff
 
 - No manual data entry
 - Instant digital record of all check-ins/outs
 
-For the School
+### For the School
 
 - Fewer errors
 - Saves time and paper
@@ -30,7 +30,7 @@ For the School
 
 ⸻
 
-How It Works
+## How It Works
 
 - Students open the check-in page (can be added to the school website)
 - Location is verified using geolocation
@@ -40,7 +40,7 @@ How It Works
 
 ⸻
 
-Tech Overview
+## Tech Overview
 
 - Frontend: Built with React for a clean, responsive design
 - Location Tracking: Ensures student is on campus
