@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignIn from './Pages/SignIn.js';
 import Home from './Pages/Landing.js';
 import { useAuth0 } from '@auth0/auth0-react';
+import SignOut from './Pages/SignOut.js';
+import Admin from './Pages/Admin.js'
 
 
 
@@ -37,6 +39,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path = "/home" element = {<Home />} />
+            <Route path = "/signout" element = {<SignOut />} />
+            <Route path = "/admin" element = {<Admin />} />
           </Routes>
         </Router>
     </div>
